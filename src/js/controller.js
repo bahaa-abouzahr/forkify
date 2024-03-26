@@ -165,6 +165,9 @@ const controlSort = function(sort=false) {
 
 }
 
+const newFeature = function() {
+  console.log("welcome to the app");
+}
 
 const init = function() {
   bookmarkView.addHandlerRender(controlBookmarks);
@@ -175,5 +178,6 @@ const init = function() {
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   sortView.addHandlerSort(controlSort)
+  newFeature();
 };
 init();
