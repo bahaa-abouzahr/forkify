@@ -165,7 +165,7 @@ const controlSort = function(sort=false) {
 
 }
 
-const newFeature() {
+const newFeature() = function {
   console.log("Welcome to the application");
 }
 
