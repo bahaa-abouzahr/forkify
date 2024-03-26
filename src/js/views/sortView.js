@@ -18,19 +18,15 @@ class SortView extends View {
 
             if(state.search.sorted === false) {
                 sortBtn.innerHTML = "Unsort";
-                console.log("hi");
             } 
             else {
                 sortBtn.innerHTML = "Sort";
-                console.log("hello");
             }
             handler();
-            console.log("SORT STATE:", state.search.sorted);
         })
     }
 
     _generateMarkup() {
-        console.log(this._data);
         let curPage = this._data.currentPage;
 
         console.log(curPage);
