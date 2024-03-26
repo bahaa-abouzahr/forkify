@@ -14,8 +14,6 @@ class SortView extends View {
 
             if(!sortBtn) return;
 
-            console.log("SORT STATE:", state.search.sorted);
-
             if(state.search.sorted === false) {
                 sortBtn.innerHTML = "Unsort";
             } 
@@ -29,7 +27,6 @@ class SortView extends View {
     _generateMarkup() {
         let curPage = this._data.currentPage;
 
-        console.log(curPage);
         return `
             <button class="btn--sort btn--small">Sort</button>
             <p id="page-num" class"page-num">Page ${curPage}</p>

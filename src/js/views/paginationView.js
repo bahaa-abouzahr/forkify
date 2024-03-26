@@ -9,13 +9,11 @@ class PaginationView extends View {
         this._parentElement.addEventListener('click', function(e) {
             const btn = e.target.closest('.btn--inline');
             const pageNumber = document.getElementById('page-num');
-            console.log(pageNumber);
             if(!btn) return;
 
 
             const goToPage = +btn.dataset.goto;
             handler(goToPage)
-            console.log(goToPage);
             pageNumber.innerHTML = `Page: ${goToPage}`;
         });
     }
